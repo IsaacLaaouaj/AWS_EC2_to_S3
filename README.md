@@ -4,9 +4,9 @@
 # Pasos que he realizado:
 
 
-1. **Configuración de una instancia EC2:** Inicié una instancia EC2 utilizando tanto el SDK de Python como la CLI. Fue crucial para mí asegurarme de que esta instancia cumpliese con los criterios del free tier para evitar cargos adicionales. Por cierto, recuerdo haber revisado una guía de la Universidad Alfonso X el Sabio que detallaba un proceso similar. 
+1. **Configuración de una instancia EC2:** Inicié una instancia EC2 utilizando la CLI. Fue crucial para mí asegurarme de que esta instancia cumpliese con los criterios del free tier para evitar cargos adicionales. 
 
-2. **Creación de un contenedor S3:** Usando de nuevo el SDK de Python y la CLI, creé un contenedor S3. Tuve especial cuidado en configurar los parámetros adecuados para poder cargar contenido en el S3 sin comprometer la seguridad, evitando el acceso público. También fue importante para mí no superar los límites del free tier. Durante este proceso, boto3 y las instrucciones de CLI resultaron ser recursos valiosos.
+2. **Creación de un contenedor S3:** Usando a CLI, creé un contenedor S3. Tuve especial cuidado en configurar los parámetros adecuados para poder cargar contenido en el S3 sin comprometer la seguridad, evitando el acceso público. También fue importante para mí no superar los límites del free tier. Durante este proceso, las instrucciones de CLI resultaron ser recursos valiosos.
 
 3. **Definición de Roles y Políticas:** Establecí un rol denominado `WriteS3ObjectRole` y una política llamada `WriteS3ObjectPolicy`. Estos elementos fueron esenciales para permitir la subida de archivos al S3 desde mi instancia EC2. Guardé los archivos de configuración JSON por si los necesitaba más adelante. Revisé algunos ejemplos y documentación oficial para entender mejor este proceso.
 
